@@ -21,7 +21,6 @@ public class HTTPSClient {
 
 			Writer out = new OutputStreamWriter(socket.getOutputStream());
 			out.write("GET / HTTP/1.0\\n\\n");
-			out.write("\\n\\n");
 			out.flush();
 
 			BufferedReader in = new BufferedReader(
