@@ -20,8 +20,8 @@ public class HTTPSClient {
 			SSLSocket socket = (SSLSocket) factory.createSocket(host, port);
 
 			Writer out = new OutputStreamWriter(socket.getOutputStream());
-			out.write("GET / HTTP/1.0\\r\\\n");
-			out.write("\\r\\n");
+			out.write("GET / HTTP/1.0\\n\\\n");
+			out.write("\\n\\n");
 			out.flush();
 
 			BufferedReader in = new BufferedReader(
